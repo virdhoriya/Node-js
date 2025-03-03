@@ -7,7 +7,9 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 
-app.use(adminRoutes);
+app.use(express.static(path.join(__dirname, "public")));
+
+app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
