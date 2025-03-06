@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="user-form">
+      <p class="users-title">users table</p>
+      <% if(users.length > 0) {%>
+      <ul class="users-list">
+        <% for(let user of users) { %>
+        <li><%= user %></li>
+        <% } %>
+      </ul>
+      <%} else { %>
+      <h4>No User Found</h4>
+      <% }%>
+    </div>
+  </body>
+</html>

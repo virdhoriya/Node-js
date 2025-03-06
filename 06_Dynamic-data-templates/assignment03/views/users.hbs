@@ -1,0 +1,13 @@
+<div class="user-form">
+  <p class="users-title">users table</p>
+  {{#if hasUsers}}
+    <ul class="users-list">
+      {{#each users}}
+        <li class="users-list__item">{{this}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <h4>No User Found</h4>
+  {{/if}}
+
+</div>

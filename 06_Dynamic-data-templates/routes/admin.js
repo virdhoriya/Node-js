@@ -6,23 +6,16 @@ const { title } = require("process");
 
 const router = express.Router();
 
-const products = [
-  {
-    title: "Book1",
-  },
-  {
-    title: "Book2",
-  },
-  {
-    title: "Book3",
-  },
-];
+const products = [];
 
 // /admin/add-product =>  GET
 router.get("/add-product", (req, res, next) => {
   res.render("add-product", {
     pageTitle: "Add Product",
     path: "/admin/add-product",
+    formCSS: true,
+    productCSS: true,
+    activeAddProduct: true,
   });
 });
 

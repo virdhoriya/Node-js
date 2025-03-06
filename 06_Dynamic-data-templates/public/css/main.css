@@ -106,6 +106,10 @@ main {
 
 .btn:hover,
 .btn:active {
+  font-family: inherit;
   background-color: #00695c;
   color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
 }

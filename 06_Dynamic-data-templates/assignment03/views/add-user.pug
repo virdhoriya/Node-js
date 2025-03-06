@@ -1,0 +1,13 @@
+extends layouts/main-layout.pug
+
+block content
+    .form-control
+        form.user-form(action="/add-user" method="POST")
+            label(for="username") Title
+            input(
+                type="text"
+                name="username"
+                id="username"
+                placeholder="enter username"
+            )
+            button.btn(type="submit") submit

@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form-control {
+  margin: 2rem auto;
+}
+
+.user-form {
+  width: 20rem;
+  max-width: 75%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.user-form label {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.user-form input {
+  border: 1px solid gray;
+  padding: 7.5px 10px;
+  border-radius: 3px;
+}
+
+.user-form input:focus {
+  outline-color: rgb(134, 32, 207);
+}
+
+.btn {
+  font: inherit;
+  border: 1px solid #00695c;
+  color: #00695c;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s;
+
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #00695c;
+  color: white;
+}
+
+/* users */
+
+.users-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.users-list__item {
+  border: 1px solid green;
+  border-radius: 2.5px;
+  background: #f7f7f7;
+  padding: 6px 12px;
+  list-style: none;
+}
+
+body a {
+  margin-top: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px solid pink;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 99px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+body a:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
